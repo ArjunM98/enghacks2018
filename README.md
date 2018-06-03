@@ -11,3 +11,6 @@ GrubIt presents the dining options in the area to each member of the group in a 
 
 ### How we built it
 Used Google APIs to retrieve information on nearby dining locations (maps api, reviews api), managed as json objects and passed to the user interface, where the images and names are displayed. Node.js is used to receive and display the data to the user. Yelp API used to retrieve descriptive restaurant reviews, used to train the Machine Learning model. Model built in NLTK used to preprocess the text, build, train, and evaluate the model. Model performs a classification task determining option_fit_for_user, or option_not_fit_for_user. LocalStorage database is used to track how many positive swipes a venue has gotten. StdLib SMS MessageBird is used to send a text to all members of the group once a consensus is reached.
+
+##### Note: 
+The source code to all references made to the machine learning aspect of this project can be found [here](https://github.com/josieesh/enghacks2018). 
